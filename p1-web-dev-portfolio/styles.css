@@ -1,0 +1,696 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER!!!! */
+
+header {
+  background-color: white;
+  height: 50px;
+  width: 100vw;
+  border: 1px solid;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+.nav-container {
+  display: inline-block;
+  margin: 0px 15px;
+}
+
+.nav-button {
+  color: #fff;
+  padding: 0px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-button img {
+  width: 20px;
+}
+
+.nav-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.651);
+  z-index: 1;
+}
+
+.nav-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: "Karla", sans-serif;
+}
+
+.nav-content a:hover {
+  background-color: #ddd;
+}
+
+.nav-container:hover .nav-content {
+  display: block;
+}
+
+.label h2 {
+  font-family: "Righteous", cursive;
+  font-size: 20px;
+}
+
+.hit-me-bar {
+  margin-left: 30px;
+}
+
+.hit-me-bar a {
+  font-family: "Karla", sans-serif;
+  letter-spacing: -1px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/* HEADER!!!! */
+
+/* MAIN PAGE!!! */
+#main-page {
+  background-color: blanchedalmond;
+  height: 844px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#main-page h1 {
+  font-family: "Signika", sans-serif;
+  font-size: 90px;
+  width: 150px;
+  margin: 0px 0px 60px 20px;
+}
+
+.text-focus-in {
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.vault-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Signika", sans-serif;
+}
+
+.vault-button img {
+  width: 50px;
+}
+
+/* MAIN PAGE!!! */
+
+/* ABOUT PAGE!!! */
+
+#about-page {
+  background-color: #060918;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.display-photo {
+  width: 400px;
+  height: 520px;
+  background-image: url(Photos/DP.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cv-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Signika", sans-serif;
+  color: white;
+  margin-top: 10px;
+}
+
+.cv-button p {
+  margin-bottom: 20px;
+}
+
+.cv-button img {
+  width: 50px;
+}
+
+.about-page-text {
+  width: 350px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.about-page-text {
+  display: flex;
+  font-family: "Karla", sans-serif;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  color: #8b95b3;
+}
+
+.about-page-text h3 {
+  color: #6919ff;
+  font-size: 20px;
+}
+
+.career-title {
+  font-family: "Signika", sans-serif;
+  font-size: 35px;
+  color: blanchedalmond;
+}
+
+/* ABOUT PAGE!!! */
+
+/* EXEPERTISE PAGE!!! */
+
+#expertise-page {
+  background-color: blanchedalmond;
+  height: 844px;
+  width: auto;
+}
+
+#expertise-page h2 {
+  padding-top: 80px;
+  font-family: "Signika", sans-serif;
+  font-size: 35px;
+  color: black;
+  text-align: center;
+}
+
+.skills-container {
+  width: 350px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+}
+
+.front-end-container {
+  height: 175px;
+  width: 350px;
+  border: 1px solid black;
+  text-align: center;
+  font-family: "Karla", sans-serif;
+}
+
+.back-end-container {
+  height: 175px;
+  width: 350px;
+  border: 1px solid black;
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Karla", sans-serif;
+}
+.data-base-container {
+  height: 175px;
+  width: 350px;
+  border: 1px solid black;
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Karla", sans-serif;
+}
+
+.skills-list {
+  list-style: none;
+  margin: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.skills-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.skill-text {
+  color: #909bb9;
+  font-family: "Righteous", cursive;
+}
+
+.skill-image img {
+  width: 80px;
+  margin-top: 10px;
+}
+
+/* EXEPERTISE PAGE!!! */
+
+/* PORTFOLIO PAGE!!! */
+
+#portfolio-page {
+  background-color: #060918;
+  height: 844px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-text p {
+  color: #6919ff;
+  font-size: 25px;
+  font-family: "Signika", sans-serif;
+}
+
+.portfolio-text h2 {
+  color: blanchedalmond;
+  font-size: 25px;
+  font-family: "Signika", sans-serif;
+}
+
+.portfolio-images {
+  border: 1px solid black;
+  border-radius: 5%;
+  background-color: rgba(128, 128, 128, 0.103);
+  height: 410px;
+  width: 250px;
+  margin-top: 75px;
+  text-align: center;
+}
+
+.portfolio-images img {
+  width: 25%;
+  margin-top: 60%;
+}
+
+.portfolio-images p {
+  color: blanchedalmond;
+  font-size: 20px;
+  font-family: "Karla", sans-serif;
+  margin-top: 2.5px;
+}
+
+/* PORTFOLIO PAGE!!! */
+
+/* CONTACT PAGE!!! */
+
+#contact-page {
+  background-color: blanchedalmond;
+  height: 844px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  font-family: "Karla", sans-serif;
+  text-align: justify;
+  width: 330px;
+  padding-top: 100px;
+}
+
+.contact-text h2 {
+  color: #6919ff;
+  font-size: 35px;
+}
+.contact-text h3 {
+  color: rgb(235, 93, 119);
+  font-size: 25px;
+}
+
+.contact-text img {
+  width: 15%;
+  margin-left: 40%;
+}
+
+#contact-forms {
+  width: 300px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.input-box {
+  margin-bottom: 20px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-box span {
+  font-size: 15px;
+  display: block;
+  text-align: left;
+  margin-top: 5px;
+  font-family: "Karla", sans-serif;
+}
+
+.message-box {
+  height: 100px;
+}
+
+.submit-button button {
+  font-family: "Signika", sans-serif;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.submit-button button:hover {
+  background-color: #0056b3;
+}
+
+.contact-links {
+  margin-top: 20px;
+}
+.contact-links img {
+  margin: 0px 30px;
+  width: 40px;
+}
+
+/* TABLET RESOLUTION */
+
+@media all and (min-width: 767px) {
+  body {
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background-color: white;
+    height: 50px;
+    width: 100vw;
+    border: 1px solid;
+    display: flex;
+    position: fixed;
+    align-items: center;
+  }
+
+  .label h2 {
+    font-family: "Righteous", cursive;
+    font-size: 20px;
+    margin-left: 32vw;
+  }
+
+  .hit-me-bar {
+    margin-left: 27vw;
+  }
+
+  #main-page {
+    height: 852px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 200px;
+    align-items: first baseline baseline;
+    column-gap: 150px;
+  }
+
+  .vault-button {
+    padding-bottom: 250px;
+  }
+
+  .display-photo {
+    width: 500px;
+  }
+
+  .cv-button p {
+    margin-bottom: 20px;
+  }
+
+  .cv-button img {
+    width: 50px;
+  }
+
+  .about-page-text {
+    width: 550px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  .about-page-text h3 {
+    color: #6919ff;
+    font-size: 30px;
+  }
+
+  .career-title {
+    font-size: 35px;
+  }
+
+  /* ABOUT PAGE!!! */
+
+  #contact-page {
+    height: 800px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .contact-text {
+    padding-top: 100px;
+    text-align: center;
+    width: 400px;
+    display: flex;
+  }
+  .contact-text p {
+    text-align: justify;
+  }
+
+  #contact-forms {
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-evenly;
+  }
+
+  .contact-links {
+  }
+}
+
+/* TABLET RESOLUTION */
+
+/* PC RESOLUTION RESOLUTION */
+
+@media all and (min-width: 1025px) {
+  header {
+    width: 100%;
+  }
+  .nav-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .nav-button {
+    display: none;
+  }
+
+  .nav-content {
+    display: block;
+    position: static;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .nav-content a {
+    display: inline-block;
+    padding: 0 15px;
+  }
+
+  .nav-content a:hover {
+    background-color: transparent;
+  }
+
+  .nav-container:hover .nav-content {
+    display: block;
+  }
+
+  .label h2 {
+    margin: 0;
+    padding-left: 120px;
+  }
+
+  #main-page {
+    height: 1080px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #main-page h1 {
+    font-family: "Signika", sans-serif;
+    font-size: 140px;
+    width: 1300px;
+    margin: 0;
+  }
+
+  .vault-button img {
+    width: 100px;
+  }
+  .vault-button p {
+    font-size: 35px;
+  }
+
+  #about-page {
+    height: 1080px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .display-photo {
+    width: 990px;
+    height: 1080px;
+  }
+
+  .cv-button {
+    margin-right: 200px;
+  }
+  #expertise-page {
+    height: 1080px;
+  }
+
+  #expertise-page h2 {
+    font-size: 80px;
+  }
+
+  .skills-container {
+    width: 1980px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 100px;
+  }
+
+  .skills-container h3 {
+    font-size: 25px;
+    padding: 10px;
+  }
+
+  .front-end-container {
+    height: 775px;
+    width: 300px;
+  }
+
+  .back-end-container {
+    margin: 0;
+    height: 775px;
+    width: 300px;
+  }
+  .data-base-container {
+    height: 775px;
+    width: 300px;
+    margin: 0;
+  }
+  .skills-list {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 50px;
+  }
+
+  .skill-text {
+    font-size: 30px;
+  }
+
+  .skill-image img {
+    width: 150px;
+    margin-top: 10px;
+  }
+
+  #portfolio-page {
+    background-color: #060918;
+    height: 1080px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .portfolio-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .portfolio-text p {
+    color: #6919ff;
+    font-size: 55px;
+    font-family: "Signika", sans-serif;
+  }
+
+  .portfolio-text h2 {
+    font-size: 45px;
+  }
+
+  .portfolio-images {
+    height: 710px;
+    width: 450px;
+  }
+
+  #contact-page {
+    height: 1080px;
+  }
+}
